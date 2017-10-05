@@ -1,9 +1,9 @@
 {
     "name": "sargilla/tcpdf",
     "type": "library",
-    "description": "Composer wrapper for TCPDF PHP library",
-    "keywords": ["tcpdf", "pdf"],
-    "homepage": "https://github.com/sargilla/TCPDF",
+    "description": "TCPDF en Laravel",
+    "keywords": ["tcpdf", "pdf","laravel"],
+    "homepage": "https://github.com/sargilla/tcpdf",
     "license": "MIT",
     "authors": [
         {
@@ -15,11 +15,23 @@
     ],
     "autoload": {
         "psr-4": {
-            "Sargilla\\TCPDF\\": "src"
+            "Sargilla\\Tcpdf\\": "src"
         }
         
     },
     "require": {
-        "php": ">=5.3.0"
-    }
+        "php": ">=5.3.0",
+        "illuminate/support": "^5.5",
+        "tecnickcom/tcpdf": "^6.2"
+    },
+     "extra": {
+      "laravel": {
+          "providers": [
+              "Sargilla\\Tcpdf\\TcpdfServiceProvider"
+          ],
+          "aliases": {
+              "PDF": "Sargilla\\Tcpdf\\Facades\\Tcpdf"
+          }
+      }
+  }
 }
