@@ -1,0 +1,25 @@
+{
+    "name": "sargilla/tcpdf",
+    "type": "library",
+    "description": "Composer wrapper for TCPDF PHP library",
+    "keywords": ["tcpdf", "pdf"],
+    "homepage": "https://github.com/sargilla/TCPDF",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Santiago Argilla",
+            "email": "sargilla@gmail.com",
+            "homepage": "https://github.com/sargilla",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Sargilla\\TCPDF\\": "src"
+        }
+        
+    },
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
