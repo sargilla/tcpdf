@@ -2,8 +2,7 @@
 
 ## Installation
 
-To install, simply add it
-to your `composer.json` file:
+To install run a console command:
 
 ```
 
